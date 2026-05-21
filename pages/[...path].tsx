@@ -8,3 +8,11 @@ export default function Page() {
     </div>
   );
 }
+
+export function getServerSideProps() {
+  return {
+    props: {
+      foo: "bar",
+    },
+  };
+}
